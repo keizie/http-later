@@ -84,7 +84,7 @@ if (args.named["--verbose"] > 2) {
 server.on("error", function(err) {
     var msg = args.named["--verbose"] ? err.stack : err.message;
     console.error(msg.red);
-);
+});
 
 // log incoming requests and their initial response
 server.on("request", function(req, res) {
